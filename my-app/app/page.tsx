@@ -1,4 +1,5 @@
 import Grafico from "@/components/grafico/grafico";
+import Historico from "@/components/historico/historico";
 import TabelaGastos from "@/components/tabelaGastos/tabelaGastos";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
@@ -80,7 +81,7 @@ export default function Home() {
       <section className="mt-4 flex flex-col md:flex-row gap-4 justify-center">
         <Grafico/>
         <TabelaGastos/>
-        <TabelaGastos/>
+        <Historico/>
 
       </section>
     </main>

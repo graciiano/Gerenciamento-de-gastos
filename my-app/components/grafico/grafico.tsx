@@ -42,7 +42,7 @@ export default function Grafico() {
                         <CartesianGrid vertical={false}/>
                         <XAxis
                             dataKey="month"
-                            tickLine={false}
+                            tickLine={true}
                             tickMargin={10}
                             axisLine={false}
                             tickFormatter={(value) => value.slice(0, 3)}
