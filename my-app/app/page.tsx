@@ -3,8 +3,8 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <>
-      <h1>Projeto dashboard</h1>
-    </>
+    <main className="sm:ml-14 p-4">
+      <h1>Teste</h1>
+    </main>
   );
 }

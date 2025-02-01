@@ -1,13 +1,87 @@
 import Link from "next/link";
 import { Button } from "../ui/button";
 import { Sheet, SheetTrigger, SheetContent } from "../ui/sheet";
-import { Calendar, Grape, History, Home, Landmark, Package, PanelBottom } from "lucide-react";
+import { Calendar, Calendar1, History, Home, Landmark, LogOut, Package, PanelBottom } from "lucide-react";
+import { TooltipProvider, Tooltip, TooltipTrigger, TooltipContent } from "@radix-ui/react-tooltip";
 
 
 
 export default function SideBar() {
     return (
         <div className="flex w-full flex-col bg-muted/40">
+
+            <div className="fixed inset-y-0 left z-10 hidden w-14 border-r bg-background sm:flex flex-col">
+                <nav className="flex flex-col items-center gap-4 px-2 py-5">
+                    <TooltipProvider>
+                        <Link href="#"
+                        className="flex h-9 w-9 shrink-0 items-center justify-center bg-primary text-primary-foreground rounded-full">
+                        <Package className="h-6 w-6"/>
+                        <span className="sr-only"> Gereneciamento de Gastos</span>
+                        </Link>
+                        
+                        <Tooltip>
+                            <TooltipTrigger asChild>
+                                <Link href="#"
+                                className="flex h-9 w-9 shrink-0 items-center justify-center bg-primary rounded-lg text-muted-foreground transition-colors hover:text-foreground bg-white ">
+                                <Home className="h-6 w-6"/>
+                                <span className="sr-only"> Home</span>
+                                </Link>
+                            </TooltipTrigger>
+                            <TooltipContent className="bg-secondary rounded-md p-1" side="right">Home</TooltipContent>    
+                        </Tooltip>
+
+                        <Tooltip>
+                        <TooltipTrigger asChild>
+                                <Link href="#"
+                                className="flex h-9 w-9 shrink-0 items-center justify-center bg-primary rounded-lg text-muted-foreground transition-colors hover:text-foreground bg-white ">
+                                <Landmark className="h-6 w-6"/>
+                                <span className="sr-only"> Gerenciar</span>
+                                </Link>
+                            </TooltipTrigger>
+                            <TooltipContent className="bg-secondary rounded-md p-1" side="right">Gerenciar Pagamentos</TooltipContent>
+                        </Tooltip>
+
+                        <Tooltip>
+                        <TooltipTrigger asChild>
+                                <Link href="#"
+                                className="flex h-9 w-9 shrink-0 items-center justify-center bg-primary rounded-lg text-muted-foreground transition-colors hover:text-foreground bg-white ">
+                                <Calendar1 className="h-6 w-6"/>
+                                <span className="sr-only"> Gastos Mensais</span>
+                                </Link>
+                            </TooltipTrigger>
+                            <TooltipContent className="bg-secondary rounded-md p-1" side="right">Gastos Mensais</TooltipContent>
+                        </Tooltip>
+
+                        <Tooltip>
+                        <TooltipTrigger asChild>
+                                <Link href="#"
+                                className="flex h-9 w-9 shrink-0 items-center justify-center bg-primary rounded-lg text-muted-foreground transition-colors hover:text-foreground bg-white ">
+                                <History className="h-6 w-6"/>
+                                <span className="sr-only"> Gastos Mensais</span>
+                                </Link>
+                            </TooltipTrigger>
+                            <TooltipContent className="bg-secondary rounded-md p-1" side="right">Hisotirco</TooltipContent>
+                        </Tooltip>
+                    </TooltipProvider>
+                </nav>
+
+                <nav className="mt-auto flex flex-col items-center gap-4 px-2 py-5">
+                    <TooltipProvider>
+                        <Tooltip>
+                            <TooltipTrigger asChild>
+                                <Link href="#"
+                                className="flex h-9 w-9 shrink-0 items-center justify-center bg-primary rounded-lg text-muted-foreground transition-colors hover:text-foreground bg-white ">
+                                <LogOut className="h-5 w-5 text-red-600"/>
+                                <span className="sr-only"> Home</span>
+                                </Link>
+                            </TooltipTrigger>
+                            <TooltipContent className="bg-secondary rounded-md p-1" side="right">Home</TooltipContent>    
+                        </Tooltip>
+                    </TooltipProvider>
+                </nav>
+            </div>
+
+
             <div className=" sm:hidden flex flex-col sm:gap-4 sm:py-4 sm:pl-14">
                 <header className="sticky top-0 z-30 flex h-14 items-center px-4 border-b gap-4 sm:static
                 sm:h-auto sm:border-0 sm-bg-transparent">
@@ -62,6 +136,8 @@ export default function SideBar() {
                     <h2>Menu</h2>
                 </header>
             </div>
+
+
         </div>
     )
 }
