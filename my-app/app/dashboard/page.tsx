@@ -1,4 +1,4 @@
-// app/dashboard/page.tsx
+
 import Grafico from "@/components/grafico/grafico";
 import Historico from "@/components/historico/historico";
 import Perfil from "@/components/perfil/perfil";
