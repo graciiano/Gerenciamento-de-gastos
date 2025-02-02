@@ -75,7 +75,7 @@ export default function TabelaGastos() {
   }
 
   return (
-    <Card className="w-full md:w-1/2 md:max-w-[700px]">
+    <Card className="w-full">
       <CardHeader>
         <div className="flex items-center justify-between">
           <CardTitle className="text-lg sm:text-xl text-gray-700">

@@ -13,7 +13,7 @@ export default function RootLayout({
   return (
     <html lang="pt-br">
       <body
-        className={`
+        className= {`
           ${cn("min-h-screen bg-background font-sans antialiased",
             inter.className
           )}

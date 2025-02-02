@@ -111,3 +111,21 @@ body {
     padding: 1rem;
   }
 }
+
+@layer base {
+  body {
+    @apply antialiased;
+  }
+  
+  table {
+    @apply w-full border-collapse;
+  }
+  
+  th, td {
+    @apply p-3 text-left border-b border-gray-100;
+  }
+  
+  th {
+    @apply bg-gray-50 font-medium text-gray-600;
+  }
+}

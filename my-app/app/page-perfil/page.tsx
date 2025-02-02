@@ -10,7 +10,7 @@ import { DollarSign, LucideVerified, PercentDiamond, X } from "lucide-react";
 
 export default function PagePerfil() {
   return (
-    <main className="sm:ml-14 p-4 bg-muted  mx-auto">
+    <main className="sm:ml-14 p-4   mx-auto">
       <div className="mb-8">
         <Perfil />
       </div>

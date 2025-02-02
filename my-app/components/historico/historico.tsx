@@ -88,7 +88,7 @@ export default function Historico() {
   }
 
   return (
-    <Card className="w-full md:w-1/2 md:max-w-[700px]">
+    <Card className="w-full ">
       <CardHeader>
         <div className="flex items-center justify-between">
           <CardTitle className="text-lg sm:text-xl text-gray-700">
@@ -119,7 +119,8 @@ export default function Historico() {
                   R$ {item.valor.toFixed(2).replace(".", ",")}
                 </TableCell>
                 <TableCell className="text-right space-x-2">
-                    <div className="flex lg:flex-row lg:space-x-2">
+                    <div className="flex lg:flex-row lg:space-x-2">´
+                    
                     <Button
                       variant="outline"
                       onClick={() => editar(item.id)}
