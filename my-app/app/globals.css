@@ -104,3 +104,10 @@ body {
     --chart-5: 340 75% 55%;
   }
 }
+
+
+@media (max-width: 380px) {
+  .card-content {
+    padding: 1rem;
+  }
+}

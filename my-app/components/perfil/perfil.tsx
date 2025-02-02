@@ -82,28 +82,7 @@ export default function Perfil() {
             </Badge>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-            <div>
-              <p className="text-sm text-gray-500">Agência</p>
-              <p className="font-medium text-gray-900">0001</p>
-            </div>
-            <div>
-              <p className="text-sm text-gray-500">Conta</p>
-              <div className="flex items-center gap-2">
-                <span className="font-medium text-gray-900">13579-2</span>
-                <Button variant="ghost" size="icon" className="w-6 h-6">
-                  <Copy className="w-3 h-3 text-gray-500" />
-                </Button>
-              </div>
-            </div>
-          </div>
-
-          <div className="flex gap-2 mt-6 justify-center sm:justify-start">
-            <Button variant="outline" className="gap-2">
-              <FileText className="w-4 h-4" />
-              Extrato
-            </Button>
-          </div>
+        
         </div>
       </CardContent>
     </Card>
