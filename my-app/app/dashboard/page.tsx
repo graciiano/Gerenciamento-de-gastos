@@ -1,4 +1,3 @@
-import Grafico from "@/components/grafico/grafico";
 import { Component } from "@/components/grafico/grafico2";
 import Historico from "@/components/historico/historico";
 import TabelaCategoria from "@/components/tabelaCategorias/tabelaCategoria";
@@ -18,7 +17,6 @@ export default function Dashboard() {
             </div>
           </div>
 
-          {/* Cards Inferiores */}
           <div className="grid gap-6 md:grid-cols-2 h-full">
             <div className="bg-white rounded-xl p-4 shadow-sm h-full">
               <h2 className="text-lg font-semibold mb-3 text-emerald-600">
@@ -40,7 +38,6 @@ export default function Dashboard() {
           </div>
         </div>
 
-        {/* Sidebar Direita */}
         <div className="xl:w-96 flex flex-col gap-6">
           <div className="bg-white rounded-xl p-4 shadow-sm">
             <h2 className="text-lg font-semibold mb-3 text-purple-600 ml-1">

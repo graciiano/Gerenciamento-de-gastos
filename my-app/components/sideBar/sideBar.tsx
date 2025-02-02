@@ -124,7 +124,7 @@ export default function SideBar() {
             <Tooltip>
               <TooltipTrigger asChild>
                 <Link
-                  href="#"
+                  href="/dashboard"
                   className="flex h-9 w-9 shrink-0 items-center justify-center bg-primary rounded-lg text-muted-foreground transition-colors hover:text-foreground bg-white "
                 >
                   <LogOut className="h-5 w-5 text-red-600" />
@@ -158,11 +158,11 @@ export default function SideBar() {
             <SheetContent side="left" className="sm-max-w-x">
               <nav className="grid gap-6 text-lg font-medium">
                 <Link
-                  href="#"
+                  href="/page-perfil"
                   className="flex h-10 w-10 bg-primary rounded-full text-lg items-center justify-center text-primary-foreground md:text-base gap-2 "
                 >
                   <Package className="h-5 w-5 transition-all" />
-                  <span className="sr-only">Logo do projeto</span>
+                  <span className="sr-only">Perfil do usuario</span>
                 </Link>
 
                 <Link
@@ -174,7 +174,7 @@ export default function SideBar() {
                 </Link>
 
                 <Link
-                  href="#"
+                  href="/gerenciar"
                   className="flex items-center gap-4 px-2.5 text-muted-foreground hover:text-foreground"
                 >
                   <Landmark className="h-5 w-5 transition-all" />
@@ -182,14 +182,14 @@ export default function SideBar() {
                 </Link>
 
                 <Link
-                  href="#"
+                  href="/gastos-mensais"
                   className="flex items-center gap-4 px-2.5 text-muted-foreground hover:text-foreground"
                 >
                   <Calendar className="h-5 w-5 transition-all" />
                   Gastos Mensais
                 </Link>
                 <Link
-                  href="#"
+                  href="/historico"
                   className="flex items-center gap-4 px-2.5 text-muted-foreground hover:text-foreground"
                 >
                   <History className="h-5 w-5 transition-all" />

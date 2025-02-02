@@ -14,7 +14,7 @@ import { useState } from "react";
 import { Select, SelectContent, SelectItem, SelectTrigger } from "../ui/select";
 
 export default function TabelaCategoria() {
-  const [gastos, setGastosOriginais] = useState([
+  const [gastos] = useState([
     { id: 1, data: "21/01", categoria: "Alimentacao", valor: 250.0 },
     { id: 2, data: "21/01", categoria: "Alimentacao", valor: 250.0 },
     { id: 3, data: "22/01", categoria: "Casa", valor: 500.0 },
