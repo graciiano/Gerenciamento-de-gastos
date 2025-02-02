@@ -1,90 +1,64 @@
-import { Calendar, Mail, Pencil } from "lucide-react";
-import { Badge } from "../ui/badge";
-import { Avatar, AvatarFallback, AvatarImage } from "../ui/avatar";
-import { Button } from "../ui/button";
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "../ui/card";
-import { TooltipProvider, Tooltip, TooltipTrigger, TooltipContent } from "@radix-ui/react-tooltip";
+import Image from 'next/image'
 
 export default function Perfil() {
   return (
-    <Card className="w-full max-w-[600px] p-4 sm:p-6 border-2 border-black">
-      <CardHeader>
-        <div className="flex flex-col sm:flex-row items-center gap-4">
-          <Avatar className="w-16 h-16">
-            <AvatarImage
-              src="/avatar.webp"
-              alt="Foto do Diogo Graciano"
-              className="object-cover rounded-full"
-            />
-            <AvatarFallback className="bg-blue-100 text-blue-800 text-2xl font-semibold">
-              DG
-            </AvatarFallback>
-          </Avatar>
+    <section className="bg-white shadow-sm rounded-xl p-6 border border-gray-200 hover:shadow-md transition-shadow">
+      <div className="flex flex-col items-center gap-4 text-center">
+        <div className="relative w-20 h-20 rounded-full bg-gray-100 border-2 border-white shadow-lg">
+          <Image
+            src="/avatar.webp"
+            fill
+            alt="Perfil Diogo"
+            className="rounded-full object-cover"
+          />
+        </div>
 
-          <div className="flex-1 space-y-2 text-center sm:text-left">
-            <div className="flex flex-col sm:flex-row items-center sm:justify-between gap-2 sm:gap-4">
-              <div className="flex-1 min-w-0">
-                <CardTitle className="text-2xl text-gray-900 truncate">
-                  Diogo Graciano
-                </CardTitle>
-                <CardDescription className="mt-1 truncate">
-                  Desenvolvedor Full Stack
-                </CardDescription>
-              </div>
-              <Button variant="ghost" size="sm" className="gap-2">
-                <Pencil className="w-4 h-4" />
-                Editar Perfil
-              </Button>
-            </div>
+        <div>
+          <h2 className="text-xl font-bold text-gray-900">Diogo Graciano</h2>
+          <p className="text-sm text-gray-500 mt-1">Desenvolvedor Full Stack</p>
+        </div>
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-sm">
-              <div className="flex items-center gap-2 justify-center sm:justify-start">
-                <Mail className="w-4 h-4 text-gray-500" />
-                <span className="truncate">diogograciiano@gmail.com</span>
-              </div>
-              <div className="flex items-center gap-2 justify-center sm:justify-start">
-                <TooltipProvider>
-                  <Tooltip>
-                    <TooltipTrigger asChild>
-                      <Calendar className="w-4 h-4 text-gray-500" />
-                    </TooltipTrigger>
-                    <TooltipContent
-                      className="bg-secondary rounded-md p-1"
-                      side="right"
-                    >
-                    <span className="truncate">Membro desde: 01/2025</span>
-                    </TooltipContent>
-                  </Tooltip>
-                  <span className="truncate">Membro desde: 01/2025</span>
-                  
-                </TooltipProvider>
-              </div>
-            </div>
+        <button className="w-full max-w-[200px] py-2 px-4 bg-gray-50 hover:bg-gray-100 rounded-lg transition-colors duration-200">
+          <span className="text-sm font-medium text-gray-700 flex items-center justify-center gap-2">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+              <path d="M17 3a2.85 2.83 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5Z"/>
+            </svg>
+            Editar Perfil
+          </span>
+        </button>
+
+        <div className="w-full border-t border-gray-100 my-4"/>
+
+        <div className="w-full space-y-2">
+          <div className="flex items-center justify-center gap-2 text-sm">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+              <path d="M21 8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16Z"/>
+              <path d="m3.3 7 8.7 5 8.7-5"/>
+              <path d="M12 22V12"/>
+            </svg>
+            <span className="text-gray-600">diogograciiano@gmail.com</span>
+          </div>
+          
+          <div className="flex items-center justify-center gap-2 text-sm">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+              <rect width="18" height="18" x="3" y="4" rx="2" ry="2"/>
+              <line x1="16" x2="16" y1="2" y2="6"/>
+              <line x1="8" x2="8" y1="2" y2="6"/>
+              <line x1="3" x2="21" y1="10" y2="10"/>
+            </svg>
+            <span className="text-gray-600">Membro desde: 01/2024</span>
           </div>
         </div>
-      </CardHeader>
-      <CardContent className="border-t pt-6">
-        <div className="space-y-4">
-          <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center">
-            <div>
-              <h3 className="text-sm font-medium text-gray-500">
-                Saldo disponível
-              </h3>
-              <p className="text-3xl font-semibold text-gray-900 mt-1">
-                R$ 45.230,50
-              </p>
-            </div>
-            <Badge
-              variant="outline"
-              className="bg-green-50 text-green-700 mt-2 sm:mt-0"
-            >
-              Conta Corrente
-            </Badge>
-          </div>
 
-        
+        {/* Saldo Disponível */}
+        <div className="w-full mt-4 space-y-3">
+          <div className="text-sm font-medium text-gray-500">Saldo disponível</div>
+          <div className="text-2xl font-bold text-gray-900">R$ 45.230,50</div>
+          <div className="inline-flex items-center px-3 py-1 rounded-full bg-green-50/80 border border-green-100">
+            <span className="text-xs font-semibold text-green-700">Conta Corrente</span>
+          </div>
         </div>
-      </CardContent>
-    </Card>
-  );
+      </div>
+    </section>
+  )
 }
