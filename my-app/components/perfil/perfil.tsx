@@ -1,4 +1,4 @@
-import { ArrowUpDown, Calendar, Copy, FileText, Mail, Pencil } from "lucide-react";
+import { Calendar, Copy, FileText, Mail, Pencil } from "lucide-react";
 import { Badge } from "../ui/badge";
 import { Avatar, AvatarFallback, AvatarImage } from "../ui/avatar";
 import { Button } from "../ui/button";
