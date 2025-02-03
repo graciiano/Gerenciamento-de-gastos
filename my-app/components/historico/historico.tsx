@@ -119,7 +119,7 @@ export default function Historico() {
                   R$ {item.valor.toFixed(2).replace(".", ",")}
                 </TableCell>
                 <TableCell className="text-right space-x-2">
-                    <div className="flex lg:flex-row lg:space-x-2">´
+                    <div className="flex lg:flex-row lg:space-x-2">
                     
                     <Button
                       variant="outline"

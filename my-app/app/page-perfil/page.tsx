@@ -12,7 +12,16 @@ export default function PagePerfil() {
   return (
     <main className="sm:ml-14 p-4   mx-auto">
       <div className="mb-8">
-        <Perfil />
+        <Perfil 
+          nome="Diogo Graciano" 
+          cargo="Desenvolvedor Full Stack" 
+          avatarAlt="Foto do usuario" 
+          dataEntrada="23/06/2024" 
+          email="Diogograciiano" 
+          saldoDisponivel="9999999.00 R$"
+          tipoConta="Conta Corrente"
+          botaoTexto="Editar Perfil"
+        />
       </div>
 
       <section className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
