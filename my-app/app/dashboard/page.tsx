@@ -56,42 +56,42 @@ export default function Dashboard() {
               <div className="flex justify-between items-center p-2 hover:bg-gray-50 rounded-md">
                 <span className="text-sm">Alimentação</span>
                 <span className="text-sm font-medium text-rose-600">
-                  R$ 100,00
+                  R$ -100,00
                 </span>
               </div>
 
               <div className="flex justify-between items-center p-2 hover:bg-gray-50 rounded-md">
                 <span className="text-sm">Roupas</span>
                 <span className="text-sm font-medium text-rose-600">
-                  R$ 450,00
+                  R$ -450,00
                 </span>
               </div>
 
               <div className="flex justify-between items-center p-2 hover:bg-gray-50 rounded-md">
                 <span className="text-sm">Feira</span>
                 <span className="text-sm font-medium text-rose-600">
-                  R$ 600,00
+                  R$ -600,00
                 </span>
               </div>
 
               <div className="flex justify-between items-center p-2 hover:bg-gray-50 rounded-md">
                 <span className="text-sm">ifood</span>
                 <span className="text-sm font-medium text-rose-600">
-                  R$ 300,00
+                  R$ -300,00
                 </span>
               </div>
 
               <div className="flex justify-between items-center p-2 hover:bg-gray-50 rounded-md">
                 <span className="text-sm">Uber</span>
                 <span className="text-sm font-medium text-rose-600">
-                  R$ 100,00
+                  R$ -100,00
                 </span>
               </div>
 
               <div className="flex justify-between items-center p-2 hover:bg-gray-50 rounded-md">
                 <span className="text-sm">Steam</span>
                 <span className="text-sm font-medium text-rose-600">
-                  R$ 30,00
+                  R$ -30,00
                 </span>
               </div>
             </div>

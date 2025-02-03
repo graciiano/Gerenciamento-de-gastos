@@ -11,7 +11,7 @@ Este é um projeto para gerenciar gastos pessoais, permitindo que os usuários a
 
 ## 🛠️ Tecnologias
 
-- **Frontend**: Next.js 15.x (App Router)
+- **Frontend**:  React 18.x  & Next.js 15.x (App Router)
 - **Estilização**: Tailwind CSS
 
 
@@ -19,24 +19,3 @@ Este é um projeto para gerenciar gastos pessoais, permitindo que os usuários a
  ![alt text](image.png) 
 - https://excalidraw.com/#json=zkyPe9m49Z5A9S9mDrJty,19L64rGolr8qFzBD6XQE0Q
 
-
-
-## 🚀 Instalação
-
-1. Clone o repositório:
-    ```bash
-    git clone https://github.com/seu-usuario/gerenciamento-de-gastos.git
-    ```
-2. Navegue até o diretório do projeto:
-    ```bash
-    cd gerenciamento-de-gastos
-    ```
-3. Instale as dependências:
-    ```bash
-    npm install
-    ```
-
-5. Inicie a aplicação:
-    ```bash
-    npm run dev
-    ```
