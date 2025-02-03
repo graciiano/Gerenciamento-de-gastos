@@ -43,7 +43,7 @@ export default function Dashboard() {
             <h2 className="text-lg font-semibold mb-3 text-purple-600 ml-1">
               Análise por Categoria
             </h2>
-            <div className="h-[350px] bg-gray-50 rounded-lg p-4 overflow-y-auto">
+            <div className="h-[350px] rounded-lg p-4 overflow-y-auto">
               <TabelaCategoria />
             </div>
           </div>

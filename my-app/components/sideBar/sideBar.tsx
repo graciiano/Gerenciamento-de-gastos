@@ -124,7 +124,7 @@ export default function SideBar() {
             <Tooltip>
               <TooltipTrigger asChild>
                 <Link
-                  href="/dashboard"
+                  href="/"
                   className="flex h-9 w-9 shrink-0 items-center justify-center bg-primary rounded-lg text-muted-foreground transition-colors hover:text-foreground bg-white "
                 >
                   <LogOut className="h-5 w-5 text-red-600" />
@@ -166,7 +166,7 @@ export default function SideBar() {
                 </Link>
 
                 <Link
-                  href="#"
+                  href="/dashboard"
                   className="flex items-center gap-4 px-2.5 text-muted-foreground hover:text-foreground"
                 >
                   <Home className="h-5 w-5 transition-all" />
