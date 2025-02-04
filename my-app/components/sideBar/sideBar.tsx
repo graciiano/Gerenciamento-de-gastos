@@ -6,6 +6,7 @@ import { Sheet, SheetTrigger, SheetContent } from "../ui/sheet";
 import {
   Calendar,
   Calendar1,
+  Contact,
   DollarSign,
   History,
   Home,
@@ -125,7 +126,7 @@ export default function SideBar() {
                   className="flex h-9 w-9 shrink-0 items-center justify-center bg-primary rounded-lg text-muted-foreground transition-colors hover:text-foreground bg-white "
                 >
                   <DollarSign className="h-6 w-6" />
-                  <span className="sr-only"> Financeiro</span>
+                  <span className="sr-only"> Conversor de moedas</span>
                 </Link>
               </TooltipTrigger>
               <TooltipContent
@@ -133,6 +134,23 @@ export default function SideBar() {
                 side="right"
               >
                 Financeiro
+              </TooltipContent>
+            </Tooltip>
+            <Tooltip>
+              <TooltipTrigger asChild>
+                <Link
+                  href="/contato"
+                  className="flex h-9 w-9 shrink-0 items-center justify-center bg-primary rounded-lg text-muted-foreground transition-colors hover:text-foreground bg-white "
+                >
+                  <Contact className="h-6 w-6" />
+                  <span className="sr-only"> Contate-nos</span>
+                </Link>
+              </TooltipTrigger>
+              <TooltipContent
+                className="bg-secondary rounded-md p-1"
+                side="right"
+              >
+                Contate-nos
               </TooltipContent>
             </Tooltip>
           </TooltipProvider>
