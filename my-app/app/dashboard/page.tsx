@@ -13,7 +13,7 @@ export default function Dashboard() {
               Evolução Mensal
             </h2>
             <div className="h-[400px] bg-gray-50 rounded-lg flex gap-2">
-                <Component/>
+                <Component/>  
             </div>
           </div>
 

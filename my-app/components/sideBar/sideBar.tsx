@@ -6,6 +6,7 @@ import { Sheet, SheetTrigger, SheetContent } from "../ui/sheet";
 import {
   Calendar,
   Calendar1,
+  DollarSign,
   History,
   Home,
   Landmark,
@@ -113,7 +114,25 @@ export default function SideBar() {
                 className="bg-secondary rounded-md p-1"
                 side="right"
               >
-                Hisotirco
+                Historico
+              </TooltipContent>
+            </Tooltip>
+
+            <Tooltip>
+              <TooltipTrigger asChild>
+                <Link
+                  href="/conversor-de-moeda"
+                  className="flex h-9 w-9 shrink-0 items-center justify-center bg-primary rounded-lg text-muted-foreground transition-colors hover:text-foreground bg-white "
+                >
+                  <DollarSign className="h-6 w-6" />
+                  <span className="sr-only"> Financeiro</span>
+                </Link>
+              </TooltipTrigger>
+              <TooltipContent
+                className="bg-secondary rounded-md p-1"
+                side="right"
+              >
+                Financeiro
               </TooltipContent>
             </Tooltip>
           </TooltipProvider>
@@ -194,6 +213,13 @@ export default function SideBar() {
                 >
                   <History className="h-5 w-5 transition-all" />
                   Historico
+                </Link>
+                <Link
+                  href="/conversor-de-moeda"
+                  className="flex items-center gap-4 px-2.5 text-muted-foreground hover:text-foreground"
+                >
+                  <DollarSign className="h-5 w-5 transition-all" />
+                  Financeiro
                 </Link>
               </nav>
             </SheetContent>
