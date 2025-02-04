@@ -1,7 +1,6 @@
 'use client'
 
-
-import { useState, useEffect } from 'react';
+import { useState, useEffect} from 'react';
 
 interface UseFetchResponse<T> {
   data: T | null;
@@ -36,4 +35,5 @@ const useFetch = <T>(url: string): UseFetchResponse<T> => {
   return { data, loading, error };
 };
 
-export default useFetch;
+
+export { useFetch };

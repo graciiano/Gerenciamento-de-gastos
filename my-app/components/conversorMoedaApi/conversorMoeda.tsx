@@ -1,6 +1,5 @@
 'use client'
 
-import useFetch from '@/hooks/useFetch';
 import React, { useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
@@ -14,6 +13,7 @@ import {
 } from '@/components/ui/select';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Skeleton } from '@/components/ui/skeleton';
+import { useFetch } from '@/hooks/useFetch';
 
 export default function ConversorDeMoedasApi() {
   const [amount, setAmount] = useState<number>(1);
