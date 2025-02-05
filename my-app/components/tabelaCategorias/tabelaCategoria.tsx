@@ -1,4 +1,4 @@
-"use client";
+'use client';
 
 import { DollarSign, List } from "lucide-react";
 import { Card, CardContent, CardHeader } from "../ui/card";

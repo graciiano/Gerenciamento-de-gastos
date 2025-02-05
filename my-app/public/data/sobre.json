@@ -1,0 +1,30 @@
+{
+    "title": "Sobre o Sistema de Finanças",
+    "description": "Nosso sistema de finanças é uma ferramenta poderosa para gerenciar suas finanças pessoais e empresariais. Ele permite que você acompanhe suas receitas, despesas, investimentos e muito mais.",
+    "features": [
+        {
+            "name": "Gerenciamento de Despesas",
+            "description": "Registre e categorize todas as suas despesas para ter um controle detalhado de onde seu dinheiro está sendo gasto."
+        },
+        {
+            "name": "Gerenciamento de Receitas",
+            "description": "Acompanhe todas as suas fontes de renda e veja como seu dinheiro está entrando."
+        },
+        {
+            "name": "Relatórios Financeiros",
+            "description": "Gere relatórios detalhados para entender melhor sua situação financeira e tomar decisões informadas."
+        },
+        {
+            "name": "Orçamento",
+            "description": "Crie e gerencie orçamentos para garantir que você está vivendo dentro de suas possibilidades."
+        },
+        {
+            "name": "Investimentos",
+            "description": "Acompanhe seus investimentos e veja como eles estão performando ao longo do tempo."
+        }
+    ],
+    "contact": {
+        "email": "suporteOnline@sistemadefinancas.com",
+        "phone": "+55 83 1234-5678"
+    }
+}
