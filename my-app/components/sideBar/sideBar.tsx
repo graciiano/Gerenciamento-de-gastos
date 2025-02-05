@@ -11,6 +11,7 @@ import {
   History,
   Home,
   Landmark,
+  Library,
   LogOut,
   Package,
   PanelBottom,
@@ -134,6 +135,23 @@ export default function SideBar() {
                 side="right"
               >
                 Financeiro
+              </TooltipContent>
+            </Tooltip>
+            <Tooltip>
+              <TooltipTrigger asChild>
+                <Link
+                  href="/sobre"
+                  className="flex h-9 w-9 shrink-0 items-center justify-center bg-primary rounded-lg text-muted-foreground transition-colors hover:text-foreground bg-white "
+                >
+                  <Library className="h-6 w-6" />
+                  <span className="sr-only">Sobre</span>
+                </Link>
+              </TooltipTrigger>
+              <TooltipContent
+                className="bg-secondary rounded-md p-1"
+                side="right"
+              >
+                Sobre
               </TooltipContent>
             </Tooltip>
             <Tooltip>
